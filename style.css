@@ -1,0 +1,511 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e6e2;
+  color: rgb(201, 166, 166);
+  /* font-family: "Poppins", sans-serif; */
+}
+
+header a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0 20px;
+  background-color: rgb(46, 38, 29);
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#brand {
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#brand a {
+  color: #ee061a;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#login,
+#signup {
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+#login {
+  border: 1px solid rgb(38, 38, 110);
+  background-color: rgb(38, 38, 110);
+}
+
+#signup {
+  border: 1px solid black;
+  background-color: black;
+}
+
+#signup a {
+  color: #ffffff;
+}
+
+#login a {
+  color: #ffffff;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+  width: 100%;
+
+  background-image: url("images/pngtree-3d-bg-interior-render-of-small-coffee-shop-style-restaurant-image_2577636.jpg");
+}
+
+.hero-section .mobiletext {
+  margin-top: 30px;
+  margin-left: 30px;
+  color: #ffffff;
+  font-size: 100px;
+  text-decoration: none;
+}
+.hero-section .mobilebtn {
+  margin-left: 200px;
+  margin-top: 350px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  width: 150px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 25px;
+}
+
+.mobilelastlargecontainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+.mobilecheckoutcontainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 300px;
+  width: 100%;
+  background-color: rgb(230, 215, 197);
+}
+.mobilechekouttext {
+  display: flex;
+  display: inline-block;
+  height: 64px;
+  width: 500px;
+  margin-left: 28px;
+  margin-top: 24px;
+  color: rgb(0, 0, 0);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+
+.mobileanimationbox {
+  display: none;
+}
+
+.desktopcontmain {
+  display: flex;
+  padding-left: 40px;
+}
+.desktopconttxt {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.desktopconttxt h1 {
+  color: black;
+  font-size: 50px;
+}
+.desktopimage1 {
+  width: 100%;
+  height: 500px;
+  background-image: url(images/4_First-Starbucks-drive-thru-opens-in-Russias.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+.container1 {
+  overflow: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  padding-top: 15px;
+  background-color: white;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+  background: rgb(184, 182, 182);
+  margin-right: 5px;
+
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.box img {
+  width: 300px;
+  height: 300px;
+  margin-left: 20px;
+}
+.box a {
+  padding-left: 20px;
+}
+.box-text {
+  color: black;
+  font-weight: 600;
+}
+.box-price {
+  color: rgb(36, 34, 34);
+}
+.lastbtn {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding-top: 30px;
+}
+.btncont {
+  border: 1px solid black;
+  background-color: rgb(216, 211, 211);
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 40px;
+}
+.btncont a {
+  text-decoration: none;
+  color: black;
+}
+@media only screen and (max-width: 600px) {
+  header nav {
+    display: none;
+  }
+  .desktopcont {
+    display: none;
+  }
+  #hamburger-icon {
+    display: block;
+  }
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+
+    background-image: url("images/pngtree-3d-bg-interior-render-of-small-coffee-shop-style-restaurant-image_2577636.jpg");
+  }
+  .hero-section .mobiletext {
+    margin-top: 30px;
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+  }
+  .hero-section .mobilebtn {
+    margin-left: 200px;
+    margin-top: 150px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    width: 150px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 25px;
+  }
+  .mobilelastlargecontainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+  }
+  .mobilecheckoutcontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+    background-color: rgb(230, 215, 197);
+  }
+  .mobilechekouttext {
+    display: flex;
+    display: inline-block;
+    height: 64px;
+    width: 200px;
+    margin-left: 28px;
+    margin-top: 24px;
+    color: rgb(0, 0, 0);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+  .mobileanimationbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+    padding-top: 30px;
+  }
+  .mobileheadtext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .mobileanimationbox img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mobileanimationtext {
+    margin-left: 17px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .mobilelearnthelatesttext {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: 17px;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  .container1 {
+    overflow: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    padding-top: 15px;
+    background-color: white;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    width: 150px;
+    background: rgb(184, 182, 182);
+    margin-right: 5px;
+
+    flex-shrink: 0;
+    scroll-snap-align: start;
+  }
+  .box img {
+    width: 110px;
+    height: 110px;
+    margin-left: 20px;
+  }
+  .box a {
+    padding-left: 20px;
+  }
+  .box-text {
+    color: black;
+    font-weight: 600;
+  }
+  .box-price {
+    color: rgb(36, 34, 34);
+  }
+  .mobileheadtext1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+  }
+  .lastbtn {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-top: 30px;
+  }
+  .btncont {
+    border: 1px solid black;
+    background-color: rgb(216, 211, 211);
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 40px;
+  }
+  .btncont a {
+    text-decoration: none;
+    color: black;
+  }
+  .footer-main1 {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    background-color: rgba(4, 91, 98, 1);
+    margin-top: 50px;
+  }
+
+  .about-company {
+    padding: 50px 0px 0px 150px;
+  }
+  .about-company h2 {
+    margin-bottom: 30px;
+    font-family: poppins;
+    color: white;
+    font-size: 22px;
+    letter-spacing: 10px;
+    font-weight: bolder;
+  }
+  .footer-images {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-images a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .footer-images1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .footer-images1 a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .about-company p {
+    color: rgba(235, 235, 235, 1);
+    font-family: poppins;
+    font-weight: lighter;
+    font-size: 18px;
+  }
+  .footer-contact {
+    padding: 50px 0px 0px 0px;
+  }
+  .footer-contact h2 {
+    margin-bottom: 30px;
+    font-family: poppins;
+    color: white;
+    font-size: 24px;
+    letter-spacing: 10px;
+    font-weight: bolder;
+  }
+
+  .footer-navigation {
+    padding: 50px 0px 0px 0px;
+  }
+  .footer-navigation ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    list-style: none;
+  }
+
+  .footer-navigation a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+  }
+}
